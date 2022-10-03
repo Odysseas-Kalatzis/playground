@@ -1,0 +1,45 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+STB_IMAGE_IMPLEMENTATION	texture_load.cpp	/^#define STB_IMAGE_IMPLEMENTATION /;"	d	file:
+Shader	include/shader.h	/^class Shader$/;"	c
+Shader	shader.cpp	/^Shader::Shader(char const* vertexPath, char const* fragmentPath)$/;"	f	class:Shader
+Texture_Load	include/texture_load.h	/^class Texture_Load$/;"	c
+Texture_Load	texture_load.cpp	/^Texture_Load::Texture_Load(char const* path, GLuint tex_unit, $/;"	f	class:Texture_Load
+destroy	shader.cpp	/^void Shader::destroy()$/;"	f	class:Shader	typeref:typename:void
+ebo	include/cube.h	/^    unsigned int ebo;$/;"	m	struct:vbo_ebo_vao	typeref:typename:unsigned int
+ebo	include/rectangle.h	/^    unsigned int ebo;$/;"	m	struct:vbo_ebo_vao	typeref:typename:unsigned int
+framebuffer_size_callback	main.cpp	/^void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, $/;"	f	typeref:typename:void
+getShaderID	shader.cpp	/^GLuint Shader::getShaderID()$/;"	f	class:Shader	typeref:typename:GLuint
+getTextureID	texture_load.cpp	/^GLuint Texture_Load::getTextureID()$/;"	f	class:Texture_Load	typeref:typename:GLuint
+height	include/texture_load.h	/^    GLint height;$/;"	m	class:Texture_Load	typeref:typename:GLint
+id	include/shader.h	/^    GLuint id;$/;"	m	class:Shader	typeref:typename:GLuint
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+makeRectangle	rectangle.cpp	/^vbo_ebo_vao makeRectangle()$/;"	f	typeref:typename:vbo_ebo_vao
+nrChannels	include/texture_load.h	/^    GLint nrChannels; $/;"	m	class:Texture_Load	typeref:typename:GLint
+processInput	main.cpp	/^void processInput(GLFWwindow* window)$/;"	f	typeref:typename:void
+projection	main.cpp	/^static glm::mat4 projection;$/;"	v	typeref:typename:glm::mat4	file:
+setBool	shader.cpp	/^void Shader::setBool(char const* name, bool value) const$/;"	f	class:Shader	typeref:typename:void
+setFloat	shader.cpp	/^void Shader::setFloat(char const* name, float value) const$/;"	f	class:Shader	typeref:typename:void
+setInt	shader.cpp	/^void Shader::setInt(char const* name, int value) const$/;"	f	class:Shader	typeref:typename:void
+setMat4f	shader.cpp	/^void Shader::setMat4f(char const* name, float value[16]) const$/;"	f	class:Shader	typeref:typename:void
+setVec4f	shader.cpp	/^void Shader::setVec4f(char const* name, float value[4]) const$/;"	f	class:Shader	typeref:typename:void
+texture	include/texture_load.h	/^    GLuint texture;$/;"	m	class:Texture_Load	typeref:typename:GLuint
+texture_unit	include/texture_load.h	/^    GLuint texture_unit;$/;"	m	class:Texture_Load	typeref:typename:GLuint
+use	shader.cpp	/^void Shader::use()$/;"	f	class:Shader	typeref:typename:void
+use	texture_load.cpp	/^void Texture_Load::use()$/;"	f	class:Texture_Load	typeref:typename:void
+vao	include/cube.h	/^    unsigned int vao;$/;"	m	struct:vbo_ebo_vao	typeref:typename:unsigned int
+vao	include/rectangle.h	/^    unsigned int vao;$/;"	m	struct:vbo_ebo_vao	typeref:typename:unsigned int
+vbo	include/cube.h	/^    unsigned int vbo;$/;"	m	struct:vbo_ebo_vao	typeref:typename:unsigned int
+vbo	include/rectangle.h	/^    unsigned int vbo;$/;"	m	struct:vbo_ebo_vao	typeref:typename:unsigned int
+vbo_ebo_vao	include/cube.h	/^struct vbo_ebo_vao$/;"	s
+vbo_ebo_vao	include/rectangle.h	/^struct vbo_ebo_vao$/;"	s
+width	include/texture_load.h	/^    GLint width; $/;"	m	class:Texture_Load	typeref:typename:GLint
+window_height	main.cpp	/^static int window_height;$/;"	v	typeref:typename:int	file:
+window_width	main.cpp	/^static int window_width;$/;"	v	typeref:typename:int	file:

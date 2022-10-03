@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+CFLAGS	Makefile	/^CFLAGS=-Wall -Wextra -pedantic -O3 -mavx2$/;"	m
+DEBUG_FLAGS	Makefile	/^DEBUG_FLAGS=-fsanitize=address -fsanitize=undefined -g -fno-omit-frame-pointer -Wall -Wextra -pe/;"	m
+LFLAGS	Makefile	/^LFLAGS=-lpthread$/;"	m
+MATRIX_H	matrix.h	/^#define MATRIX_H /;"	d
+MIN	matrix.h	/^#define MIN(/;"	d
+all	Makefile	/^all:$/;"	t
+clean	Makefile	/^clean:$/;"	t
+cols	matrix.h	/^  int cols;$/;"	m	struct:matrix	typeref:typename:int
+elts	matrix.h	/^  double *elts;$/;"	m	struct:matrix	typeref:typename:double *
+main	main.c	/^int main(void) { $/;"	f	typeref:typename:int
+mat1	matrix.c	/^    matrix_t mat1;$/;"	m	struct:matrix_thread_args	typeref:typename:matrix_t	file:
+mat2	matrix.c	/^    matrix_t mat2;$/;"	m	struct:matrix_thread_args	typeref:typename:matrix_t	file:
+matrix	matrix.h	/^struct matrix {$/;"	s
+matrix_create	matrix.c	/^matrix_t matrix_create(int rows, int cols) { $/;"	f	typeref:typename:matrix_t
+matrix_fast_fast_thread	matrix.c	/^void* matrix_fast_fast_thread(void* input)$/;"	f	typeref:typename:void *
+matrix_free	matrix.c	/^void matrix_free(matrix_t m) { $/;"	f	typeref:typename:void
+matrix_get	matrix.c	/^double matrix_get(matrix_t m, int r, int c) { $/;"	f	typeref:typename:double
+matrix_multiply	matrix.c	/^matrix_t matrix_multiply(matrix_t m1, matrix_t m2) { $/;"	f	typeref:typename:matrix_t
+matrix_multiply_fast	matrix.c	/^matrix_t matrix_multiply_fast(matrix_t m1, matrix_t m2) { $/;"	f	typeref:typename:matrix_t
+matrix_multiply_fast_fast	matrix.c	/^matrix_t matrix_multiply_fast_fast(matrix_t m1, matrix_t m2)$/;"	f	typeref:typename:matrix_t
+matrix_multiply_transposed	matrix.c	/^matrix_t matrix_multiply_transposed(matrix_t m1, matrix_t m2) { $/;"	f	typeref:typename:matrix_t
+matrix_print	matrix.c	/^void matrix_print(matrix_t m) $/;"	f	typeref:typename:void
+matrix_set	matrix.c	/^void matrix_set(matrix_t m, int r, int c, double d) { $/;"	f	typeref:typename:void
+matrix_t	matrix.h	/^typedef struct matrix matrix_t; $/;"	t	typeref:struct:matrix
+matrix_test	main.c	/^void matrix_test(void) { $/;"	f	typeref:typename:void
+matrix_thread_args	matrix.c	/^struct matrix_thread_args$/;"	s	file:
+matrix_transpose	matrix.c	/^matrix_t matrix_transpose(matrix_t m) { $/;"	f	typeref:typename:matrix_t
+multiplier	main.c	/^typedef matrix_t (*multiplier)(matrix_t m1, matrix_t m2); $/;"	t	typeref:typename:matrix_t (*)(matrix_t m1,matrix_t m2)	file:
+output	matrix.c	/^    matrix_t output;$/;"	m	struct:matrix_thread_args	typeref:typename:matrix_t	file:
+rows	matrix.h	/^  int rows;$/;"	m	struct:matrix	typeref:typename:int
+sane	Makefile	/^sane:$/;"	t
+tid	matrix.c	/^    int tid;$/;"	m	struct:matrix_thread_args	typeref:typename:int	file:
+tile	matrix.c	/^    int tile;$/;"	m	struct:matrix_thread_args	typeref:typename:int	file:
+time_it	main.c	/^void time_it(multiplier f, matrix_t m1, matrix_t m2, char *msg) { $/;"	f	typeref:typename:void
